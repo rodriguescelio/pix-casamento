@@ -1,0 +1,105 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.align {
+  display: inline-block;
+  height: 87.2%;
+  width: 100%;
+}
+
+.box {
+  margin: 0 auto;
+  aspect-ratio: 0.5625;
+  background-color: #fff;
+  max-height: 100%;
+  text-align: center;
+}
+
+.box img {
+  display: inline-block;
+  width: 185px;
+  margin-top: 40px;
+}
+
+.box h1 {
+  display: inline-block;
+  color: #955A30;
+  font-weight: 400;
+  font-size: 27.5px;
+  margin: 0;
+  margin-top: 2px;
+  text-align: center;
+  width: 70%;
+  border-bottom: solid 1px #955A30;
+  padding-bottom: 30px;
+}
+
+.box textarea {
+  font-family: 'Comfortaa', cursive;
+  resize: none;
+  border: none;
+  width: 70%;
+  border: solid 1px #dfdfdf;
+  box-shadow: -3px -3px 22px 0px rgba(0, 0, 0, 0.07) inset;
+  outline: none;
+  height: 30%;
+  text-align: center;
+  margin-top: 13%;
+  border-radius: 27px;
+  box-sizing: border-box;
+  padding: 60px 25px;
+  color: #1E1E1E;
+}
+
+.button-align {
+  width: 100%;
+  margin-top: 20%;
+}
+
+button {
+  font-family: 'Comfortaa', cursive;
+  background-color: #955A30;
+  background: linear-gradient(0deg, rgba(149,90,48,1) 39%, rgba(160,106,69,1) 72%, rgba(183,142,114,1) 100%);
+  border: none;
+  color: #FFFFFF;
+  padding: 19px 30px;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+}
+
+button .tooltip {
+  position: absolute;
+  top: -60px;
+  color: #1E1E1E;
+  background-color: #DEDEDE;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  right: 0;
+  font-weight: normal;
+  display: none;
+}
+
+button .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #DEDEDE transparent transparent transparent;
+}
