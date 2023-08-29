@@ -45,21 +45,28 @@ body {
   padding-bottom: 30px;
 }
 
+.box .textarea {
+  width: 70%;
+  border: solid 1px #dfdfdf;
+  box-shadow: -3px -3px 22px 0px rgba(0, 0, 0, 0.07) inset;
+  margin: 13% auto 0 auto;
+  border-radius: 27px;
+  box-sizing: border-box;
+  padding: 10px 25px;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+
 .box textarea {
   font-family: 'Comfortaa', cursive;
   resize: none;
   border: none;
-  width: 70%;
-  border: solid 1px #dfdfdf;
-  box-shadow: -3px -3px 22px 0px rgba(0, 0, 0, 0.07) inset;
+  width: 100%;
   outline: none;
-  height: 30%;
   text-align: center;
-  margin-top: 13%;
-  border-radius: 27px;
-  box-sizing: border-box;
-  padding: 60px 25px;
   color: #1E1E1E;
+  overflow: hidden;
 }
 
 .button-align {

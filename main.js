@@ -14,6 +14,9 @@ window.addEventListener('load', () => {
   const params = new URLSearchParams(window.location.search);
   if (params.has('c') && codes[params.get('c')]) {
     text.innerHTML = codes[params.get('c')];
+
+    text.style.height = text.scrollHeight + 'px';
+
   } else {
     window.location = '?c=jujuba';
   }
