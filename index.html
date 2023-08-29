@@ -4,8 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      width: 100%;
+      text-align: center;
+    }
+    textarea {
+      width: 90%;
+      margin-top: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+
 </head>
 <body>
-  Teste
+  <textarea name="" id="text" rows="7">
+    00020126420014BR.GOV.BCB.PIX0120celiorod21@gmail.com520400005303986540550.005802BR5923Celio Emanuel Rodrigues6009SAO PAULO61080540900062220518Identificadorteste63047637
+  </textarea>
+  <button onclick="copy()">Clique para copiar o código</button>
+
+  <script>
+    function copy() {
+      const text = document.getElementById('text');
+
+      text.focus();
+
+      text.select();
+      text.setSelectionRange(0, 99999);
+
+      document.execCommand('copy');
+
+      alert("Texto copiado para a area de transferencia");
+    }
+  </script>
 </body>
 </html>
