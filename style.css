@@ -26,13 +26,13 @@ body {
   text-align: center;
 }
 
-.box img {
+img {
   display: inline-block;
   width: 185px;
   margin-top: 40px;
 }
 
-.box h1 {
+h1 {
   display: inline-block;
   color: #955A30;
   font-weight: 400;
@@ -45,7 +45,7 @@ body {
   padding-bottom: 30px;
 }
 
-.box .textarea {
+.textarea {
   width: 70%;
   border: solid 1px #dfdfdf;
   box-shadow: -3px -3px 22px 0px rgba(0, 0, 0, 0.07) inset;
@@ -58,7 +58,7 @@ body {
   align-items: center;
 }
 
-.box textarea {
+textarea {
   font-family: 'Comfortaa', cursive;
   resize: none;
   border: none;
@@ -109,4 +109,13 @@ button .tooltip::after {
   border-width: 10px;
   border-style: solid;
   border-color: #DEDEDE transparent transparent transparent;
+}
+
+@media screen and (max-width: 440px) {
+  h1 {
+    width: 90%;
+  }
+  .textarea {
+    width: 90%;
+  }
 }
